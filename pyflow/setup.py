@@ -1,5 +1,6 @@
 # Author: Deepak Pathak (c) 2016
 
+import argparse
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -11,8 +12,14 @@ from glob import glob
 
 import numpy
 
-sourcefiles = ['pyflow.pyx', ]
-sourcefiles.extend(glob("src/*.cpp"))
+parser = argparse.ArgumentParser(description='')
+parser.add_argument('-s', '--source', default="pyflow.pyx", help="pyx")
+parser.add_argument('-s2', '--source2', default="src/*.cpp", help="pyx2")
+
+args = parser.parse_args()
+
+sourcefiles = [args.s1, ]
+sourcefiles.extend(glob(args.s2))
 extensions = [Extension("pyflow", sourcefiles, include_dirs=[numpy.get_include()])]
 setup(
     name="pyflow",
