@@ -7,12 +7,10 @@ from __future__ import print_function
 from distutils.core import setup
 from Cython.Build import cythonize
 from distutils.extension import Extension
-from glob import glob
 
 import numpy
 
-sourcefiles = ["/content/iSeeBetter/pyflow/pyflow.pyx", ]
-sourcefiles.extend(glob("/content/iSeeBetter/pyflow/src/*.cpp"))
+sourcefiles = ["/content/iSeeBetter/pyflow/pyflow.pyx", "/content/iSeeBetter/pyflow/src/Coarse2FineFlowWrapper.cpp","/content/iSeeBetter/pyflow/src/OpticalFlow.cpp"]
 extensions = [Extension("pyflow", sourcefiles, include_dirs=[numpy.get_include()])]
 setup(
     name="pyflow",
