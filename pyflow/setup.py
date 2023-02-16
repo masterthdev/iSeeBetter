@@ -18,8 +18,8 @@ parser.add_argument('-s2', '--s2', type=str,default="src/", help="pyx2")
 
 args = parser.parse_args()
 
-sourcefiles = [args.source, ]
-sourcefiles.extend(glob(args.source2 + "*.cpp"))
+sourcefiles = [args.s, ]
+sourcefiles.extend(glob(args.s2 + "*.cpp"))
 extensions = [Extension("pyflow", sourcefiles, include_dirs=[numpy.get_include()])]
 setup(
     name="pyflow",
