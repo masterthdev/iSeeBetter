@@ -13,13 +13,13 @@ import argparse
 import numpy
 
 parser = argparse.ArgumentParser(description='')
-parser.add_argument('-s', '--s', type=str,default="pyflow.pyx", help="pyx")
-parser.add_argument('-s2', '--s2', type=str,default="src/", help="pyx2")
+parser.add_argument('-s', '--ss', type=str,default="pyflow.pyx", help="pyx")
+parser.add_argument('-s2', '--ss2', type=str,default="src/", help="pyx2")
 
 args = parser.parse_args()
 
-sourcefiles = [args.s, ]
-sourcefiles.extend(glob(args.s2 + "*.cpp"))
+sourcefiles = [args.ss, ]
+sourcefiles.extend(glob(args.ss2 + "*.cpp"))
 extensions = [Extension("pyflow", sourcefiles, include_dirs=[numpy.get_include()])]
 setup(
     name="pyflow",
