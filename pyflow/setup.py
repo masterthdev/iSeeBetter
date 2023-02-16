@@ -9,17 +9,10 @@ from Cython.Build import cythonize
 from distutils.extension import Extension
 from glob import glob
 
-import argparse
 import numpy
 
-parser = argparse.ArgumentParser(description='Test')
-parser.add_argument('--s', type=str, default="pyflow.pyx")
-parser.add_argument('--s2', type=str, default="src/")
-
-args = parser.parse_args()
-
-sourcefiles = [args.s, ]
-sourcefiles.extend(glob(args.s2 + "*.cpp"))
+sourcefiles = ["/content/iSeeBetter/pyflow/pyflow.pyx", ]
+sourcefiles.extend(glob("/content/iSeeBetter/pyflow/src/*.cpp"))
 extensions = [Extension("pyflow", sourcefiles, include_dirs=[numpy.get_include()])]
 setup(
     name="pyflow",
