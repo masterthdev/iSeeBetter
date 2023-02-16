@@ -13,8 +13,8 @@ import argparse
 import numpy
 
 parser = argparse.ArgumentParser(description='')
-parser.add_argument('-s', '--source', default="pyflow.pyx", help="pyx")
-parser.add_argument('-s2', '--source2', default="src/*.cpp", help="pyx2")
+parser.add_argument('-s', '--s', type=str,default="pyflow.pyx", help="pyx")
+parser.add_argument('-s2', '--s2', type=str,default="src/", help="pyx2")
 
 args = parser.parse_args()
 
