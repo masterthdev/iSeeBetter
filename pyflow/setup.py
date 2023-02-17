@@ -10,7 +10,7 @@ from distutils.extension import Extension
 
 import numpy
 
-sourcefiles = ["/content/iSeeBetter/pyflow/pyflow.pyx", "/content/iSeeBetter/pyflow/src/Coarse2FineFlowWrapper.cpp","/content/iSeeBetter/pyflow/src/OpticalFlow.cpp"]
+sourcefiles = ["/content/iSeeBetter/pyflow/pyflow.pyx", "/content/src/Coarse2FineFlowWrapper.cpp","/content/src/OpticalFlow.cpp"]
 extensions = [Extension("pyflow", sourcefiles, include_dirs=[numpy.get_include()])]
 setup(
     name="pyflow",
