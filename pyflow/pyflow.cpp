@@ -14,11 +14,11 @@
         "language": "c++",
         "name": "pyflow",
         "sources": [
-            "pyflow.pyx",
-            "src/Stochastic.cpp",
-            "src/GaussianPyramid.cpp",
-            "src/Coarse2FineFlowWrapper.cpp",
-            "src/OpticalFlow.cpp"
+            "/content/pyflow/pyflow.pyx",
+            "/content/pyflow/src/Stochastic.cpp",
+            "/content/pyflow/src/GaussianPyramid.cpp",
+            "/content/pyflow/src/Coarse2FineFlowWrapper.cpp",
+            "/content/pyflow/src/OpticalFlow.cpp"
         ]
     },
     "module_name": "pyflow"
