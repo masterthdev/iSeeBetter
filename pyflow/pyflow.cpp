@@ -636,7 +636,7 @@ static CYTHON_INLINE float __PYX_NAN() {
 #include <stdio.h>
 #include "numpy/arrayobject.h"
 #include "numpy/ufuncobject.h"
-#include "/content/pyflow/src/Coarse2FineFlowWrapper.h"
+#include "src/Coarse2FineFlowWrapper.h"
 #ifdef _OPENMP
 #include <omp.h>
 #endif /* _OPENMP */
