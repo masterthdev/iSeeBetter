@@ -6,7 +6,7 @@
         "depends": [
             "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/numpy/core/include/numpy/arrayobject.h",
             "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/numpy/core/include/numpy/ufuncobject.h",
-            "src/Coarse2FineFlowWrapper.h"
+            "/content/pyflow/src/Coarse2FineFlowWrapper.h"
         ],
         "include_dirs": [
             "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/numpy/core/include"
@@ -636,7 +636,7 @@ static CYTHON_INLINE float __PYX_NAN() {
 #include <stdio.h>
 #include "numpy/arrayobject.h"
 #include "numpy/ufuncobject.h"
-#include "src/Coarse2FineFlowWrapper.h"
+#include "/content/pyflow/src/Coarse2FineFlowWrapper.h"
 #ifdef _OPENMP
 #include <omp.h>
 #endif /* _OPENMP */
