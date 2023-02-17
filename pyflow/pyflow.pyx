@@ -1,5 +1,5 @@
 # distutils: language = c++
-# distutils: sources = src/Coarse2FineFlowWrapper.cpp
+# distutils: sources = /content/iSeeBetter/pyflow/src/Coarse2FineFlowWrapper.cpp
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
